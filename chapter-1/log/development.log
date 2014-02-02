@@ -32,3 +32,452 @@ Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:23:32) [GET]
 Rendering template within layouts/application
 Rendering greeting/index
 Completed in 117ms (View: 116, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:43:45) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+ERROR: compiling _run_haml_app47views47greeting47index46html46haml RAISED /home/allexonrails/env/gemset_rails_2.3.18/BOOK.RAILS.CASTS/chapter-1/app/views/greeting/index.html.haml:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+...true_false((Allex is @age  year old
+...                               ^
+Function body: #coding:UTF-8
+          def _run_haml_app47views47greeting47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:xhtml, :encoding=>"UTF-8", :escape_html=>false, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((@welcome_message
+));}</h1>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((Allex is @age  year old
+));}</p>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/haml-3.1.8/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_view/base.rb:348:in `_render_with_layout'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_view/base.rb:262:in `render'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/haml-3.1.8/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/base.rb:936:in `render'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/base.rb:1328:in `default_render'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/base.rb:1334:in `perform_action'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/home/allexonrails/.rvm/gems/ruby-1.9.3-p484@rails2/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/home/allexonrails/env/gemset_rails_2.3.18/BOOK.RAILS.CASTS/chapter-1/app/views/greeting/index.html.haml:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+...true_false((Allex is @age  year old
+...                               ^) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= Allex is @age  year old
+
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (12.0ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:44:20) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:45:25) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (undefined local variable or method `old' for #<ActionView::Base:0x00000003248e40>) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= Allex is age  year old
+
+    app/views/greeting/index.html.haml:2:in `_run_haml_app47views47greeting47index46html46haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (12.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:45:45) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (undefined local variable or method `age' for #<ActionView::Base:0x000000037bcf20>) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= Allex is age
+
+    app/views/greeting/index.html.haml:2:in `_run_haml_app47views47greeting47index46html46haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (14.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:45:46) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (undefined local variable or method `age' for #<ActionView::Base:0x0000000344f770>) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= Allex is age
+
+    app/views/greeting/index.html.haml:2:in `_run_haml_app47views47greeting47index46html46haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (14.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:45:46) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (undefined local variable or method `age' for #<ActionView::Base:0x000000037b0ab8>) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= Allex is age
+
+    app/views/greeting/index.html.haml:2:in `_run_haml_app47views47greeting47index46html46haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (16.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:45:47) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (undefined local variable or method `age' for #<ActionView::Base:0x000000032ff258>) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= Allex is age
+
+    app/views/greeting/index.html.haml:2:in `_run_haml_app47views47greeting47index46html46haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (13.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:45:48) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (undefined local variable or method `age' for #<ActionView::Base:0x00000003793a08>) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= Allex is age
+
+    app/views/greeting/index.html.haml:2:in `_run_haml_app47views47greeting47index46html46haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (17.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:45:48) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (undefined local variable or method `age' for #<ActionView::Base:0x00000003236a38>) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= Allex is age
+
+    app/views/greeting/index.html.haml:2:in `_run_haml_app47views47greeting47index46html46haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (12.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:46:02) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (undefined method `is' for #<ActionView::Base:0x00000003780278>) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= Allex is @age
+
+    app/views/greeting/index.html.haml:2:in `_run_haml_app47views47greeting47index46html46haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (15.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:46:09) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:46:51) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (Indentation can't use both tabs and spaces.) on line #3 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p 	Allex is,
+3:  	=@age,
+4:  	year old
+
+    app/views/greeting/index.html.haml:3
+    haml (3.1.8) lib/haml/parser.rb:95:in `block in tabs'
+    haml (3.1.8) lib/haml/parser.rb:88:in `instance_eval'
+    haml (3.1.8) lib/haml/parser.rb:88:in `tabs'
+    haml (3.1.8) lib/haml/parser.rb:698:in `block_opened?'
+    haml (3.1.8) lib/haml/parser.rb:336:in `tag'
+    haml (3.1.8) lib/haml/parser.rb:186:in `process_line'
+    haml (3.1.8) lib/haml/parser.rb:148:in `parse'
+    haml (3.1.8) lib/haml/engine.rb:124:in `initialize'
+    haml (3.1.8) lib/haml/template/plugin.rb:34:in `new'
+    haml (3.1.8) lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.1.8) lib/haml/template/plugin.rb:39:in `call'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (29.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:48:43) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (Indentation can't use both tabs and spaces.) on line #3 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p 	Allex is,
+3:  	-@age,
+4:  	year old
+
+    app/views/greeting/index.html.haml:3
+    haml (3.1.8) lib/haml/parser.rb:95:in `block in tabs'
+    haml (3.1.8) lib/haml/parser.rb:88:in `instance_eval'
+    haml (3.1.8) lib/haml/parser.rb:88:in `tabs'
+    haml (3.1.8) lib/haml/parser.rb:698:in `block_opened?'
+    haml (3.1.8) lib/haml/parser.rb:336:in `tag'
+    haml (3.1.8) lib/haml/parser.rb:186:in `process_line'
+    haml (3.1.8) lib/haml/parser.rb:148:in `parse'
+    haml (3.1.8) lib/haml/engine.rb:124:in `initialize'
+    haml (3.1.8) lib/haml/template/plugin.rb:34:in `new'
+    haml (3.1.8) lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.1.8) lib/haml/template/plugin.rb:39:in `call'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (15.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:49:00) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:50:23) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:50:37) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:50:44) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (undefined local variable or method `is' for #<ActionView::Base:0x000000036ff3a8>) on line #2 of app/views/greeting/index.html.haml:
+1: %h1= @welcome_message
+2: %p= 	Allex is 
+3: %p=@age 
+4: %pyear old
+
+    app/views/greeting/index.html.haml:2:in `_run_haml_app47views47greeting47index46html46haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:51:15) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:51:21) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:58:13) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %tr and nested within it.) on line #5 of app/views/greeting/index.html.haml:
+2: 
+3: %table
+4: 	%tr= @table["headings"].each do |head|
+5: 		%td
+6: 			%b= head
+7: 
+8: 	= @table['body'].each do |row|
+
+    app/views/greeting/index.html.haml:5
+    haml (3.1.8) lib/haml/parser.rb:341:in `tag'
+    haml (3.1.8) lib/haml/parser.rb:186:in `process_line'
+    haml (3.1.8) lib/haml/parser.rb:148:in `parse'
+    haml (3.1.8) lib/haml/engine.rb:124:in `initialize'
+    haml (3.1.8) lib/haml/template/plugin.rb:34:in `new'
+    haml (3.1.8) lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.1.8) lib/haml/template/plugin.rb:39:in `call'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (3.1.8) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    <internal:prelude>:10:in `synchronize'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (15.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:59:16) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 20:59:24) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/greeting]
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 21:02:54) [GET]
+Rendering template within layouts/application
+Rendering greeting/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/greeting]

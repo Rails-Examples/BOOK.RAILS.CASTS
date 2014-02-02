@@ -1,2 +1,23 @@
 <h1><%= @welcome_message %></h1>
-<p>Find me in app/views/greeting/index.html.erb</p>
+<p>Allex is <%= @age%> year old</p>
+
+<H1>A simple table</H1>
+
+<table>
+	<TR>
+		<% @table["headings"].each do |head| %>
+			<TD>
+				<b><%= head %></b>
+			</TD>
+		<%- end -%>
+	</TR>
+
+	<% @table['body'].each do |row| %>
+		<TR>
+			<% row.each do |col| %>
+				<TD> <%= col %></TD>	
+			<%- end -%>
+		</TR>
+	<%- end -%>
+</table>
+
