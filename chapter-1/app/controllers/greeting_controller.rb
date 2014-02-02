@@ -1,5 +1,5 @@
 class GreetingController < ApplicationController
 	def index
-		render :text => "<H1>Welcome to your first Rails application</H1>"
+		@welcome_message = "Welcome to your first Rails application"
 	end
 end
