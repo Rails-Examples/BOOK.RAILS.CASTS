@@ -1,0 +1,28 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2014-02-02 19:07:27) [GET]
+
+ActionController::RoutingError (No route matches "/greatings" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2014-02-02 19:15:14) [GET]
+
+LoadError (Expected /home/allexonrails/env/gemset_rails_2.3.18/BOOK.RAILS.CASTS/chapter-1/app/controllers/greeting_controller.rb to define GreetingController):
+  <internal:prelude>:10:in `synchronize'
+  /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/allexonrails/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (9.0ms)
+Rendered rescues/_request_and_response (29.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GreetingController#index (for 127.0.0.1 at 2014-02-02 19:20:18) [GET]
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/greeting]
