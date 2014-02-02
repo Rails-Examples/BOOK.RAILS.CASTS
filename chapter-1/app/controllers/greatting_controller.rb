@@ -1,0 +1,2 @@
+class GreattingController < ApplicationController
+end
