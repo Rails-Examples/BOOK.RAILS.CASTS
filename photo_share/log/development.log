@@ -192,3 +192,6 @@ Migrating to AddAddressToPerson (20140211010030)
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
+  [4;36;1mPerson Load (0.7ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mPerson Load (1.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."type" = 'Photographer') LIMIT 1[0m
