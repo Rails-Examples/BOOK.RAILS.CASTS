@@ -1,3 +1,9 @@
+=begin
+	ESTA CLASSE MOSTRA UM 
+	EXEMPLO BEM BASICO DE 
+	UMA HERANÇA EM RAILS
+=end
+
 class Photographer < Person
 
 	def initialize(name="default", email="default", camera="default", address="default")

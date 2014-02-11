@@ -1,3 +1,9 @@
+=begin
+	ESTA CLASSE MOSTRA UM 
+	EXEMPLO BEM BASICO DE 
+	UMA COMPOSIÇÃO EM RAILS
+=end 
+
 class Person < ActiveRecord::Base
 	composed_of :address, :class_name => "Address",
 				:mapping => [[:street_address, :street_address],
@@ -8,6 +14,5 @@ class Person < ActiveRecord::Base
 
 	validates_length_of :name, :within => 8..128
 	validates_format_of :email,
-						:with => /^([^@\s] + )@((?: [-a-z0-9] + \.) + [a-z]{2, })$/i
-							
+						:with => /^([^@\s] + )@((?: [-a-z0-9] + \.) + [a-z]{2, })$/i						
 end

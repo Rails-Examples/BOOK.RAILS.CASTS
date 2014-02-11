@@ -195,3 +195,33 @@ Migrating to AddAddressToPerson (20140211010030)
   [4;36;1mPerson Load (0.7ms)[0m   [0;1mSELECT * FROM "people" [0m
   [4;35;1mPerson Load (1.4ms)[0m   [0mSELECT * FROM "people" [0m
   [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."type" = 'Photographer') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20140205175805)
+Migrating to CreatePeople (20140211003149)
+Migrating to CreateAddresses (20140211004456)
+Migrating to AddAddressToPerson (20140211010030)
+Migrating to CreateSlideShows (20140211021434)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "slide_shows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20140211021434')[0m
+Migrating to CreateSlides (20140211021612)
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slide_show_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20140211021612')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("addresses")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("people")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("slide_shows")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("slides")[0m
